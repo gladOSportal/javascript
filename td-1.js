@@ -32,5 +32,5 @@ function pushtoarray(){
 }
 
 function shiftfromarray(){
-    pop(text.value)
+    myarray.pop(text.value)
 }
