@@ -24,5 +24,9 @@ function updatearray(){
 }
 
 function pushtoarray(){
+    for (let i=0; i<myarray.length; i++){
+        parray.innerText +=myarray[i]+'\n'
+    }
+    parray.innerText += text.value+'\n'
 
 }
