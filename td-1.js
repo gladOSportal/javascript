@@ -18,16 +18,19 @@ function addtxt(){
 
 
 function updatearray(){
+    parray.innerText=''
     for (let i=0; i<myarray.length; i++){
         parray.innerText +=myarray[i]+'\n'
     }
 }
 
 function pushtoarray(){
-    for (let i=0; i<myarray.length; i++){
-        parray.innerText +=myarray[i]+'\n'
-    }
-    parray.innerText += text.value+'\n'
-    text.value=''
-    textToAdd.focus();
+   myarray.push(text.value)
+   updatearray()
+   text.value=''
+   text.focus()
+}
+
+function shiftfromarray(){
+    pop(text.value)
 }
