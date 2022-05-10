@@ -28,5 +28,5 @@ function pushtoarray(){
         parray.innerText +=myarray[i]+'\n'
     }
     parray.innerText += text.value+'\n'
-
+    textToAdd.focus();
 }
